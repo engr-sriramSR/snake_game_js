@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: cornflowerblue; 
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-auto-flow: row;
+    place-content: center;
+    margin: 0;
+}
+.content{
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    display: grid;
+    grid-template-areas: "tt tt" "hs s" "gb gb";
+    place-content: center;
+}
+.title{
+    grid-area: tt;
+    display: block;
+    padding: 5px;
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(99, 4, 15);
+}
+.high-score{
+    grid-area: hs;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.score{
+    grid-area: s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+#game-board{
+    grid-area: gb;
+    background-color: bisque;
+    width: 80vmin;
+    height: 80vmin;
+    display: grid;
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(21, 1fr);
+}
+.head{
+    background: linear-gradient(rgb(3, 169, 86), rgb(2, 124, 124));
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 40%;
+}
+.snake{
+    background-color: rgb(2, 9, 147);
+    border: .25vmin solid white;
+    border-radius: 15px;
+}
+.food{
+    background-color: red;
+    border: .05vmin solid black;
+    border-radius: 50%;
+}

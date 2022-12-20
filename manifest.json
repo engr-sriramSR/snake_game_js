@@ -1,0 +1,15 @@
+{
+    "short_name": "Snake",
+    "name": "Snake Game",
+    "icons": [
+      {
+        "src": "snake_icon_32x32",
+        "sizes": "32x32",
+        "type": "image/ico"
+      }
+    ],
+    "start_url": "./index.html",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+  }
